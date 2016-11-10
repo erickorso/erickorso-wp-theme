@@ -1,0 +1,78 @@
+
+.display(){
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex; // convertir en flex
+}
+.flex-direction(@row:column){
+	-webkit-flex-direction:@row;
+	-moz-flex-direction:@row;
+	-ms-flex-direction:@row;
+	-o-flex-direction:@row;
+	flex-direction:@row; // row column  -reverse
+}
+.justify-content(@justify:flex-start){
+	-webkit-justify-content:@justify;
+	-moz-justify-content:@justify;
+	-ms-justify-content:@justify;
+	-o-justify-content:@justify;
+	justify-content:@justify; // flex-start flex-end -- center - space-around space-between
+}
+.align-content(@align:flex-start){
+	-webkit-align-content:@align;
+	-moz-align-content:@align;
+	-ms-align-content:@align;
+	-o-align-content:@align;
+	align-content:@align; // flex-start flex-end -- center - space-around space-between stretch
+}
+.flex-wrap(@wrap:wrap){
+	-webkit-flex-wrap:wrap;
+	-moz-flex-wrap:wrap;
+	-ms-flex-wrap:wrap;
+	-o-flex-wrap:wrap;
+	flex-wrap:wrap; // nowrap -- wrap -- wrap-revese -- initial -- inherit
+}
+.flex(@width:1){
+	-webkit-flex:@width;
+	-moz-flex:@width;
+	-ms-flex:@width;
+	-o-flex:@width;
+	flex:@width;// ancho de la columna 1=igual 2 = doble ... 
+}
+.order(@order:0){
+	-webkit-order:@order;
+	-moz-order:@order;
+	-ms-order:@order;
+	-o-order:@order;
+	order:@order;//binario cambiar disposicion 0 -- 1 
+}
+.align-item(@align:flex-start){
+	-webkit-align-items:@align;
+	-moz-align-items:@align;
+	-ms-align-items:@align;
+	-o-align-items:@align;
+	align-items:@align;// strech -- flex-end flex-start
+}
+.align-self(@align:flex-start){
+	-webkit-align-self:@align;
+	-moz-align-self:@align;
+	-ms-align-self:@align;
+	-o-align-self:@align;
+	align-self:@align;// strech -- flex-end flex-start
+}
+.transition(@time:0.6s){
+	-ms-transition:all @time ease-in-out ;
+	-webkit-transition:all @time ease-in-out;
+	-moz-transition:all @time ease-in-out;
+	-o-transition:all @time ease-in-out;
+	transition:all @time ease-in-out;
+}
+.scale(@scale:1.1){
+	-webkit-transform: scale(@scale);
+	-moz-transform: scale(@scale);
+	-ms-transform: scale(@scale);
+	-o-transform: scale(@scale);
+	transform: scale(@scale);
+}
