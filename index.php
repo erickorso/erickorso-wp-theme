@@ -1,20 +1,16 @@
 <?php
-	/*
+/*
 	Template Name: Front Page
-	*/
-	get_header(); 
+*/
+get_header();
 
-	the_post();
-	?>
-		<div class="content-wrapper">
-		<?php
-		
-		get_template_part( 'view/templates/paginas/inicio/template' );
+the_post();
+?>
+<div class="content-wrapper">
+    <?php get_template_part('view/templates/paginas/inicio/template'); ?>
+</div>
+<?php
 
-		?>
-		</div>
-	<?php
-
-	get_footer();
+get_footer();
 
 ?>
